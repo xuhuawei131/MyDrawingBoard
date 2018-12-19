@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/layout_navigation_style">
+
+        <TextView
+            android:id="@+id/text_color"
+            style="@style/text_navigation_style"
+            android:text="颜色提取" />
+
+        <ImageView
+            android:id="@+id/image_color"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp" />
+    </RelativeLayout>
+
+    <View style="@style/view_dilive" />
+
+    <RelativeLayout
+        android:id="@+id/layout_size"
+        style="@style/layout_navigation_style">
+
+        <TextView
+            android:id="@+id/text_size"
+            style="@style/text_navigation_style"
+            android:text="画笔大小" />
+
+        <ImageView
+            android:id="@+id/image_size"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp" />
+    </RelativeLayout>
+
+    <View style="@style/view_dilive" />
+
+    <RelativeLayout
+        android:id="@+id/layout_ptype"
+        style="@style/layout_navigation_style">
+
+        <TextView
+            android:id="@+id/text_ptype"
+            style="@style/text_navigation_style"
+            android:text="画笔类型" />
+
+        <TextView
+            android:id="@+id/text_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="Normal" />
+
+    </RelativeLayout>
+
+    <View style="@style/view_dilive" />
+
+    <RelativeLayout
+        android:id="@+id/layout_new"
+        style="@style/layout_navigation_style">
+
+        <TextView
+            android:id="@+id/text_new"
+            style="@style/text_navigation_style"
+            android:text="新建" />
+
+    </RelativeLayout>
+
+    <View style="@style/view_dilive" />
+
+    <RelativeLayout
+        android:id="@+id/layout_save"
+        style="@style/layout_navigation_style">
+
+        <TextView
+            android:id="@+id/text_save"
+            style="@style/text_navigation_style"
+            android:text="保存" />
+
+    </RelativeLayout>
+
+    <View style="@style/view_dilive" />
+
+    <RelativeLayout
+        android:id="@+id/layout_pic"
+        style="@style/layout_navigation_style">
+
+        <TextView
+            android:id="@+id/text_pic"
+            style="@style/text_navigation_style"
+            android:text="相册" />
+
+    </RelativeLayout>
+
+    <View style="@style/view_dilive" />
+
+
+</LinearLayout>

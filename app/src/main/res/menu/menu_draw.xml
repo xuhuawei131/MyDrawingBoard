@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_redo"
+        android:icon="@drawable/ic_redo_grey600_24dp"
+        android:orderInCategory="20"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_undo"
+        android:icon="@drawable/ic_undo_grey600_24dp"
+        android:orderInCategory="20"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_earser"
+        android:icon="@drawable/ic_eraser"
+        android:orderInCategory="20"
+        android:title="橡皮"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_pen"
+        android:icon="@drawable/ic_brush_grey600_24dp"
+        android:orderInCategory="20"
+        android:title="画笔类型"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_matrix"
+        android:orderInCategory="20"
+        android:title="模式切换"
+        android:icon="@drawable/ic_brush_grey600_24dp"
+        app:showAsAction="ifRoom" />
+</menu>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:gravity="center_vertical|left"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image_switch"
+            android:layout_width="48dp"
+            android:layout_height="48dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/action_redo"
+                    style="@style/layout_title_image"
+                    android:src="@drawable/ic_redo_grey600_24dp" />
+
+                <ImageView
+                    android:id="@+id/action_undo"
+                    style="@style/layout_title_image"
+                    android:src="@drawable/ic_undo_grey600_24dp" />
+
+                <ImageView
+                    android:id="@+id/action_earser"
+                    style="@style/layout_title_image"
+                    android:src="@drawable/ic_eraser" />
+
+                <ImageView
+                    android:id="@+id/action_pen"
+                    style="@style/layout_title_image"
+                    android:src="@drawable/ic_brush_grey600_24dp" />
+
+                <ImageView
+                    android:id="@+id/action_matrix"
+                    style="@style/layout_title_image"
+                    android:src="@drawable/ic_brush_grey600_24dp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.activity.MainActivity">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:background="#ffffff"
+            android:minWidth="200dp"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/left_navigation_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <jiayuan.huawei.com.mydrawingboard.ui.custom.MySMattingView
+                android:id="@+id/custom_matting"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>
